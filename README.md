@@ -1,10 +1,9 @@
-# React Express Starter Pack
+# CS3200 Final Project
+Nickhil Tekwani and Hriday Sabir
+https://cs3200.weebly.com/project.html
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
-
-### Redux Version
-This version does not include Redux
-[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
+CS3200 | Database Design | Kathleen Durant
+https://cs3200.weebly.com/project.html
 
 ## Quick Start
 
@@ -18,21 +17,19 @@ npm run client-install
 # Run the client & server with concurrently
 npm run dev
 
-# Run the Express server only
+# Run the Back End (express) server only (http://localhost:5000)
 npm run server
 
-# Run the React client only
+# Run the Front End (react) client only (http://localhost:3000)
 npm run client
 
-# Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
 ## App Info
 
 ### Author
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+Nickhil Tekwani and Hriday Sabir
 
 ### Version
 
