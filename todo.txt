@@ -1,0 +1,12 @@
+done: 
+- backend talking to front end 
+- simple front end visualization
+- create database
+
+todo backend:
+- add dump to github with all data from mysql
+- add procedures: (select all from specified table, retrieve student info with certain id, delete procedure)
+todo frontend:
+- table for buildings (react table)
+- add delete button to run delete procedure (text box, dropdown, button)
+- add procedure functionality (drop down, id)
