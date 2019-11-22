@@ -58,14 +58,34 @@ class App extends Component {
   // for update existing button
   handleUpdate = input => {
     var newMessage = 'Record with ID = ' + this.state.input + ' Updated in ' + this.state.currentIc + ' Table!'
-    this.setState({ message: newMessage})
+    if (this.state.input.trim() === '') {
+      this.setState({ message: noId})
+    } else if (this.state.currentIc === '' || this.state.currentIc === 'none') {
+      this.setState({ message: noTable })
+    } else {
+      this.setState({ message: newMessage})
+    }
   };
 
   // for delete button
   handleDelete = input => {
     var newMessage = 'Record with ID = ' + this.state.input + ' Deleted in ' + this.state.currentIc + ' Table!'
-    this.setState({ message: newMessage})
+    if (this.state.input.trim() === '') {
+      this.setState({ message: noId})
+    } else if (this.state.currentIc === '' || this.state.currentIc === 'none') {
+      this.setState({ message: noTable })
+    } else {
+      this.setState({ message: newMessage})
+    }
   };
+
+  // for reset button
+  handleReset = input => {
+    this.setState( {data: [] } );
+    this.setState( {currentIC: 'none' } );
+    this.setState( {input: 'none' } );
+    this.setState( {message: '' } );
+  }
 
   render() {
     return (
@@ -88,6 +108,7 @@ class App extends Component {
           <Grid item> <Button variant="contained" onClick={this.handleCreate}> Create New </Button> </Grid>
           <Grid item> <Button variant="contained" onClick={this.handleUpdate}> Update Existing </Button> </Grid>
           <Grid item> <Button variant="contained" onClick={this.handleDelete}> Delete </Button> </Grid>
+          {/* <Grid item> <Button variant="contained" onClick={this.handleReset}> Reset </Button> </Grid> */}
         </Grid>
         <br />
         {this.state.message}
