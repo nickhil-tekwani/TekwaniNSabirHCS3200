@@ -18,13 +18,16 @@ var dropOptions = [
   { optionName: ('Major') }
 ];
 
+var noId = 'No ID Inputted!'
+var noTable = 'No Category Selected from Dropdown!'
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [],
-      currentIc: '',
-      input: '',
+      currentIc: 'none',
+      input: 'none',
       message: ''
     }
     this.handleIcChange = this.handleIcChange.bind(this);
@@ -43,7 +46,13 @@ class App extends Component {
   // for create button
   handleCreate = input => {
     var newMessage = 'Record with ID = ' + this.state.input + ' Created in ' + this.state.currentIc + ' Table!'
-    this.setState({ message: newMessage})
+    if (this.state.input.trim() === '') {
+      this.setState({ message: noId})
+    } else if (this.state.currentIc === '' || this.state.currentIc === 'none') {
+      this.setState({ message: noTable })
+    } else {
+      this.setState({ message: newMessage})
+    }
   };
 
   // for update existing button
@@ -66,8 +75,13 @@ class App extends Component {
           <h1 className="App-title">Northeastern University Analytics</h1>
         </header>
         <br />
-        <SearchBar inputType={'ID'} changeFunc={this.handleSearchChange} fontSize={'18px'}/> 
-        {this.state.input}
+
+        <Grid container justify="center" spacing={2} direction="row" alignItems="center">
+          <Grid item> <br /> <SearchBar inputType={'ID'} changeFunc={this.handleSearchChange} fontSize={'18px'}/>  </Grid>
+          <Grid item> <DropDown title={'Category'} options={dropOptions} changeFunc={this.handleIcChange} currentVal={this.state.currentIc} /> </Grid>
+          <Grid item> <br /> ID: {this.state.input} | Table: {this.state.currentIc} </Grid>
+        </Grid>
+       
         <br />
         <br />
         <Grid container justify="center" spacing={2}>
@@ -78,10 +92,7 @@ class App extends Component {
         <br />
         {this.state.message}
         <br />
-        <br />
         <hr />
-        <DropDown title={'Option'} options={dropOptions} changeFunc={this.handleIcChange} currentVal={this.state.currentIc} />
-
         <Data current={this.state.currentIc} />
 
       </div>

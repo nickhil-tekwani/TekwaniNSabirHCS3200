@@ -42,29 +42,18 @@ export default class DropDown extends React.Component {
     render() {
       let list = this.props.options;
       let title = this.props.title;
-
       return (
         <React.Fragment>
           <FormControl>
-
-            {/* title right above the drop down */}
             <InputLabel> {title} </InputLabel>
-
-            {/* material UI select component */}
             <Select onChange={this.handleChange} value={this.props.currentVal}>
-
-              {/* default option  */}
               <MenuItem key='' value='none' id={'no' + title}> No {title} Selected </MenuItem>
-
-              {/* map for all the other options fom optionsArray */}
               {list.map((list, index) => (
                   <MenuItem key={list.optionName} id={title + index} value={list.optionName}>
                     {list.optionName}
                   </MenuItem>
               ))}
-              
             </Select>
-
           </FormControl>
         </React.Fragment>
       );
