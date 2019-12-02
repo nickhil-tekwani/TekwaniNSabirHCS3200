@@ -1,6 +1,6 @@
 # CS3200 Final Project
 Nickhil Tekwani and Hriday Sabir
-https://cs3200.weebly.com/project.html
+
 
 CS3200 | Database Design | Kathleen Durant
 https://cs3200.weebly.com/project.html
