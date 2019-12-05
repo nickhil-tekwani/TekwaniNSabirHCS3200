@@ -19,6 +19,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 // title: the title of the dropdown / type of things given to it (e.g. 'vertexType')
 // options: array used to build the MenuItems (see exampleOptionsArray above)
 // currentVal: state of the currently selected menu item, passed down from the state of the parent
+
 // e.g: <DropDown title={'TitleString'} changeFunc={this.handleChange} options={dropdownArray} currentVal={this.state.value}/>
 
 // example of a changeFunc (handleChange) function from the parent:
@@ -26,7 +27,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 //   this.setState({ input: value });
 // };
 
-// example from ScorecardPage: <DropDown title={'Issue Cat'} options={this.state.icOptions} changeFunc={this.handleIcChange} currentVal={this.state.currentIc}/>
+// example: <DropDown title={'Issue Cat'} options={this.state.icOptions} changeFunc={this.handleIcChange} currentVal={this.state.currentIc}/>
 
 export default class DropDown extends React.Component {
 
