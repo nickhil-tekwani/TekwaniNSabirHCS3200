@@ -1,11 +1,11 @@
 # CS3200 Final Project
-Nickhil Tekwani and Hriday Sabir
+Nickhil Tekwani (Node and React) and Hriday Sabir (SQl)
 
 CS3200 | Database Design | Kathleen Durant
 https://cs3200.weebly.com/project.html
 
 ## Project Information
-This was a web app tool built entirely from scratch using primarily React and Node.js. The sample data is meant to represent relevant data to Northeastern University, and the front end is meant to get quick analytics on this data, as well as to create, read, update, and delete records from the DB. 
+This was a web app tool built entirely from scratch using primarily React and Node.js. The sample data is meant to represent relevant information about Northeastern University student and faculty, and the front end is meant to deliver quick analytics on this data, as well as to create, read, update, and delete records from the DB. 
 
 To replicate the project locally, please add the MySQL database to your local using the script found in /FinalProjectDump.sql, and ensure that the credentials in /server.js match your local MySQL server. 
 
@@ -37,7 +37,7 @@ npm run client
 
 ### Author
 
-Nickhil Tekwani (Node and React) and Hriday Sabir (SQL)
+Nickhil Tekwani and Hriday Sabir
 
 ### Version
 
