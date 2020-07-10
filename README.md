@@ -1,5 +1,5 @@
 # CS3200 Final Project
-Nickhil Tekwani (Node and React) and Hriday Sabir (SQl)
+Nickhil Tekwani (Node and React) and Hriday Sabir (SQL)
 
 CS3200 | Database Design | Kathleen Durant
 https://cs3200.weebly.com/project.html
