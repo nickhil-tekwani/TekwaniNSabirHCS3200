@@ -1,5 +1,5 @@
 # CS3200 Final Project
-Nickhil Tekwani (API and Front End) and Hriday Sabir (SQL)
+Nickhil Tekwani (API and Front End) and Hriday Sabir (Back End)
 
 CS3200 | Database Design | Kathleen Durant
 https://cs3200.weebly.com/project.html
